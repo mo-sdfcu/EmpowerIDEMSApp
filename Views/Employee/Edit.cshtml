@@ -1,0 +1,28 @@
+﻿@model EmpowerIDEMSApp.Models.Employee
+    
+@{
+}
+
+
+<form method="post" action="Edit">
+    <h2>Edit Employee</h2>
+    <br />
+    <div class="mb-3">
+        <label for="" class="form-label">Id:</label>
+        <input type="text" class="form-control" asp-for="Id" readonly />
+        <label for="" class="form-label">Full Name:</label>
+        <input type="text" class="form-control" asp-for="FullName" />
+
+        <label for="" class="form-label">Email Address:</label>
+        <input type="email" class="form-control" asp-for="EmailAddress" />
+
+        <label for="" class="form-label">Date of Birth:</label>
+        <input type="date" class="form-control" asp-for="BirthDate" />
+
+        <label for="" class="form-label">Department Name:</label>
+        <input type="text" class="form-control" asp-for="DepartmentName" />
+        <br />
+        <button type="submit" class="btn btn-primary" asp-action="Edit" asp-controller="Employee">Update</button>
+    </div>
+
+</form>

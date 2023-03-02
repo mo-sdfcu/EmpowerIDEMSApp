@@ -1,0 +1,33 @@
+﻿@model List<EmpowerIDEMSApp.Models.Employee>
+
+@{
+
+}
+
+<h3> Employee List</h3>
+
+<table class="table">
+    <thead>
+    <th>Id</th>
+    <th>Full Name</th>
+    <th>Date of Birth</th>
+    <th>Email Address</th>
+    <th>Department Name</th>
+    <th>Update</th>
+    <th>Delete</th>
+    </thead>
+    <tbody>
+        @foreach (var emp in Model)
+        {
+            <tr>
+                <td>@emp.Id </td>
+                <td>@emp.FullName</td>
+                <td>@emp.BirthDate.ToString("MM/dd/yyyy")</td>
+                <td>@emp.EmailAddress</td>
+                <td>@emp.DepartmentName</td>
+                <td><a href="Employee/Edit/@emp.Id">Edit</a></td>
+                <td><a href="Employee/Delete/@emp.Id">Delete</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

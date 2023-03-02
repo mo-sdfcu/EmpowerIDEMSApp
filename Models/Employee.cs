@@ -6,14 +6,21 @@ namespace EmpowerIDEMSApp.Models
     {
         [Key]
         public int Id { get; set; }
-        [Required]
+
+
+        [Required(ErrorMessage ="Full Name is a required field")]
         public string FullName { get; set; }
-        [Required]
-        [RegularExpression(".+\\@.+\\..+", ErrorMessage = "Please enter a vaild email address")]
+        
+        [Required(ErrorMessage ="Email Address is a required field")]
+        [EmailAddress(ErrorMessage ="Invalid email address")]
         public string EmailAddress { get; set; }
-        [Required]
+
+
+        [Required(ErrorMessage ="Date of birth is a required field")]
         public DateTime BirthDate { get; set; }
-        [Required]
+
+
+        [Required (ErrorMessage ="Department name is a required field")]
         public string DepartmentName { get; set; }
     }
 }
