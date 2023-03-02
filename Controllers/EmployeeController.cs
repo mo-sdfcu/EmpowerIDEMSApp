@@ -17,14 +17,38 @@ namespace EmpowerIDEMSApp.Controllers
         /// this method retrieve all the employees and search
         /// </summary>
         /// <returns></returns>
+        /// 
         [HttpGet]
-        public  IActionResult Index()
+        public IActionResult Index(string searchTerm)
         {
-            var employees = (from emp in dbContext.Employees
-                             select emp
+            ViewData["EmployeeSearchTerms"] = searchTerm;
+        
+            if (String.IsNullOrEmpty(searchTerm))
+            {
+               var employees = (from emp in dbContext.Employees
+                                 select emp
                              ).ToList();
-            return View(employees);
+                return View(employees);
+            }
+            else
+            {
+                var employees = (from list in dbContext.Employees
+                             where list.FullName.Contains(searchTerm)
+                             || list.DepartmentName.Contains(searchTerm)
+                             || list.EmailAddress.Contains(searchTerm)
+                             select list).ToList();
+                return View(employees);
+            }
+             
         }
+        //[HttpGet]
+        //public  IActionResult Index()
+        //{
+        //    var employees = (from emp in dbContext.Employees
+        //                     select emp
+        //                     ).ToList();
+        //    return View(employees);
+        //}
         #region Edit
         /// <summary>
         /// this method update an employee after it has been selected
