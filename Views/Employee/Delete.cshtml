@@ -4,7 +4,7 @@
 
 
 <form method="post" action="Edit">
-    <h2>Edit Employee</h2>
+    <h2>Delete Employee</h2>
     <br />
     <div class="mb-3">
         <label for="" class="form-label">Id:</label>
@@ -21,7 +21,7 @@
         <label for="" class="form-label">Department Name:</label>
         <input type="text" class="form-control" asp-for="DepartmentName" readonly />
         <br />
-        <button type="submit" class="btn btn-primary" asp-action="Delete" asp-controller="Employee">Delete</button>
+        <button type="submit" class="btn btn-danger" asp-action="Delete" asp-controller="Employee">Confirm Delete</button>
     </div>
 
 </form>
