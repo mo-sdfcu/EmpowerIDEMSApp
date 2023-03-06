@@ -13,6 +13,7 @@ namespace EmpowerIDEMSApp.Controllers
         {
             this.dbContext = dbContext;
         }
+        
         /// <summary>
         /// this method retrieve all the employees and search
         /// </summary>

@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmpowerIDEMSApp", "EmpowerIDEMSApp.csproj", "{75EFA37D-7515-4825-BFC0-6BF571EC0764}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmpowerIDEMSApp", "EmpowerIDEMSApp.csproj", "{75EFA37D-7515-4825-BFC0-6BF571EC0764}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmpowerID_EMS_Test", "..\EmpowerID_EMS_Test\EmpowerID_EMS_Test.csproj", "{5400EC0A-E99E-4E54-8223-FDC350D84454}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{75EFA37D-7515-4825-BFC0-6BF571EC0764}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75EFA37D-7515-4825-BFC0-6BF571EC0764}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75EFA37D-7515-4825-BFC0-6BF571EC0764}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5400EC0A-E99E-4E54-8223-FDC350D84454}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5400EC0A-E99E-4E54-8223-FDC350D84454}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5400EC0A-E99E-4E54-8223-FDC350D84454}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5400EC0A-E99E-4E54-8223-FDC350D84454}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
