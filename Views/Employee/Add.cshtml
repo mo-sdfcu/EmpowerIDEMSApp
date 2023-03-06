@@ -8,16 +8,16 @@
     <br />
     <div class="mb-3">
         <label for="" class="form-label">Full Name:</label>
-        <input type="text" class="form-control" asp-for="FullName" />
+        <input type="text" class="form-control" asp-for="FullName" required />
 
         <label for="" class="form-label">Email Address:</label>
-        <input type="email" class="form-control" asp-for="EmailAddress" />
+        <input type="email" class="form-control" asp-for="EmailAddress" required />
 
         <label for="" class="form-label">Date of Birth:</label>
-        <input type="date" class="form-control" asp-for="BirthDate" />
+        <input type="date" class="form-control" asp-for="BirthDate" required />
 
         <label for="" class="form-label">Department Name:</label>
-        <input type="text" class="form-control" asp-for="DepartmentName" />
+        <input type="text" class="form-control" asp-for="DepartmentName" required />
         <br />
         <button type="submit" class="btn btn-primary">Add</button>
     </div>

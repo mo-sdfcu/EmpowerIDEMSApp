@@ -6,10 +6,12 @@
 
 <h3> Employee List</h3>
 <form method="get" asp-action="Index">
+  
     <table class="table">
         <tr>
             <td><input type="search" placeholder="Enter employee name,email, or department name" value="@ViewData["EmployeeSearchTerms"]" class="form-control" name="searchTerm" /></td>
-            <td><input type="submit" class="btn btn-primary" value="Search" /></td>
+            <td width="40"><input type="submit" class="btn btn-primary" value="Search" /></td>
+            <td width="200" align="left"><a asp-action="Index">Show All Employees</a></td>
 
         </tr>
     </table>
